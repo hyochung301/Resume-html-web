@@ -1,36 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume '22</title>
+    <meta name="description" content="Sam Chung's Resume">
+    <title>Sam Chung's Resume</title>
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.11.0/build/cssnormalize/cssnormalize-min.css">
     <script src="https://kit.fontawesome.com/451d8f256f.js" crossorigin="anonymous"></script>
-<!-- Fonts -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Sourec+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/change.css">
-
+    <link rel="stylesheet" href="css/stylesheet.css">
 </head>
-
 
 <body>
     <header>
-        <div class="logo">
-            <img src="img/devjane.png" alt="">
-        </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="new">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="home" class="nav__link":>Home</a></li>
-                <li class="nav__item"><a href="services" class="nav__link":>My Services</a></li>
-                <li class="nav__item"><a href="about" class="nav__link":>About me</a></li>
-                <li class="nav__item"><a href="work" class="nav__link":>My Work</a></li>
-            </ul>
+        <nav>
+            <a href="#intro">Introduction</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
         </nav>
     </header>
+
     <!-- Introduction -->
     <section class="intro" id="home">
         <h1 class="section__title section__title--intro">
@@ -40,36 +34,9 @@
         <img src="img/Port-01.JPG" alt="a picture of sam smiling" class="intro__img">
     </section>
 
-    <!-- My services -->
-    <section class=""my--services" id="services">
-        <h2 class="section__title section__title--services">What I do</h2>
-        <div class="services">
-            <div class="service">
-                <h3>UTexas Student</h3>
-            </div>
-
-        <div class="services"> 
-            <div class="service">
-                <h3>QA Tester</h3>
-            </div>
-
-            <div class="services">
-                <div class="service">
-                    <h3>Army Network Engineer</h3>
-                </div>
-
-
-        </div>
-        <a href="#work" class="btn">My Work</a>
-        
-    </section>
-
-
-
-
-    <!-- About me -->
+    <!-- About Me -->
     <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">Who I am</h2>
+        <h2 class="section__title section__title--about">About Me</h2>
         <p class="section__subtitle section__subtitle--about">UTexas Student based in Austin, TX </p>
 
         <div class="about-me__body">
@@ -79,21 +46,86 @@
         <img src="img/Sam_standing.jpg" alt="Sam in military" class="about-me__img">
     </section>
 
-    <!-- My Work -->
-    <section class="my-work" id="work">
-        <h2 class="section__title">My work</h2>
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <h2 class="section__title">Skills</h2>
         <p class="section__subtitle"></p>
 
-        <div class="portfoilio">
-            <a href="#" class="protfolio__item">
-                <img src="#" alt="">
-            </a>
+        <div class="skills">
+            <table>
+                <tr>
+                    <td>Python</td>
+                    <td><img src="https://geps.dev/progress/90"></td>
+                </tr>
+                <tr>
+                    <td>C/C++</td>
+                    <td><img src="https://geps.dev/progress/90"></td>
+                </tr>
+                <tr>
+                    <td>Test Automation</td>
+                    <td><img src="https://geps.dev/progress/80"></td>
+                </tr>
+            </table>
         </div>
     </section>
 
+    <!-- Experience -->
+    <section class="experience" id="experience">
+        <h2 class="section__title">Experience</h2>
+        <p class="section__subtitle"></p>
+
+        <div class="experience">
+            <!-- Experience 1 -->
+            <div class="experience__item">
+                <h3 class="experience__role">Network and Security Research Assistant</h3>
+                <p class="experience__company">Seoul National University</p>
+                <ul class="experience__description">
+                    <li>Researched</li>
+                    <li>Read papers</li>
+                </ul>
+                <p class="experience__dates">From May 2023 - Until Dec 2023</p>
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="experience__item">
+                <h3 class="experience__role">Software QA Engineer</h3>
+                <p class="experience__company">3i inc</p>
+                <ul class="experience__description">
+                    <li>Tested Firmware</li>
+                    <li>Test automation</li>
+                </ul>
+                <p class="experience__dates">From Jan 2022 - Until Aug 2022</p>
+            </div>
+
+            <!-- Experience 3 -->
+            <div class="experience__item">
+                <h3 class="experience__role">Nodal Network System Engineer</h3>
+                <p class="experience__company">Republic of Korea Army</p>
+                <ul class="experience__description">
+                    <li>TCP IP management of military base</li>
+                    <li>Layer 3 and 4 communication</li>
+                </ul>
+                <p class="experience__dates">From Aug 2020 - Until Feb 2022</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="education" id="education">
+        <h2 class="section__title">Education</h2>
+        <p class="section__subtitle"></p>
+
+        <div class="education">
+            <div class="education__item">
+                <h3 class="education__title">The University of Texas at Austin</h3>
+                <p class="education__details">Electrical and Computer Engineering</p>
+                <p class="education__details">Relevant Courses: Computer Architecture, Multicore Computing, Network Security</p>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
-        <a href="mailto:hyochung@utexas.edu" class="footer__link">hyochung@utexas.edu</a>
+        <a href="mailto:hyochung@utexas.edu" class="footer__link">hyochung at utexas dot edu</a>
         <ul class="social-list">
             <li class="social-list__item">
                 <a class="social-list__link" href="https://www.linkedin.com/in/hyochung301/">
@@ -103,40 +135,6 @@
             <li class="social-list__item"><a class="social-list__link"></a></li>
         </ul>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h1 class="name">Hyokwon Chung</h1>
-    <h2 class="Sections">Education</h2>
-    <p>Second-year Computer Engineering student at
-        The University of Texas at Austin.</p>
-
-        <h2 class="Sections">Experience</h3>
-        <h3>Software Quality Assurance Engineering Intern</h2>
-            <p>Designed and conducted web, app, network feature, release, and verification testing as the main QA of three assigned products.<br>
-                ● Captured HTTP and Bluetooth LE communication using Proxy Man and nRF Bluetooth LE sniffing tools.<br>
-                ● Automated 17% of test cases using Selenium Python.<br>
-                ● Conducted API load testing using JMeter before a version release with major Back-end changes.</p>
-        <h3>Army Network system operator-maintainter</h2>
-            <p>Supervised, installed, operated, and performed maintenance on electronic communications equipment on the internet protocol of a division.</p>
-
-        <h2 class="Sections">Contacts</h3>
-    <table>
-        <tr><td>Phone</td><td>+1(737)888-9155</td></tr>
-        <tr><td>Email</td><td>hyochung@utexas.edu</td></tr>
-    </table>
-
-
 </body>
+
 </html>

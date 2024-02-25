@@ -44,7 +44,7 @@ body{
 
 section {
     padding: 5em 2em;
-
+    font-size: 20px;
 }
 
 img{
@@ -97,7 +97,33 @@ h3 {font-size: var(--fs-h3) }
     margin-bottom: 1em;
 }
 /* header */
-nav { display:  none; }
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#header nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+#header nav a:hover {
+    color: #04A777;
+}
+
+nav { display: block; }
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #04A777;
+}
+
 /* Intro Section */
 
 .intro {
@@ -189,6 +215,17 @@ nav { display:  none; }
     color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /* Removes the bullet points */
+    padding: 0; /* Removes the padding */
+}
+
+.social-list__item {
+    margin: 0 10px; /* Adds some space between the items */
 }
 
 .footer a { color: inherit}
